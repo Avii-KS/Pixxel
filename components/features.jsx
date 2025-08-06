@@ -9,9 +9,9 @@ const FeatureCard = ({ icon, title, description, delay = 0 }) => {
   return (
     <div
       ref={ref}
-      className={`backdrop-blur-lg bg-white/5 border border-white/10 rounded-2xl p-8 transition-all duration-700 cursor-pointer ${
+      className={`backdrop-blur-lg bg-white/5 border border-white/10 rounded-2xl p-8 transition-all duration-700 cursor-pointer hover:border-orange-500/30 ${
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-      } ${isHovered ? "transform scale-105 rotate-1 shadow-2xl" : ""}`}
+      } ${isHovered ? "transform scale-105 rotate-1 shadow-2xl shadow-orange-500/20" : ""}`}
       style={{ transitionDelay: `${delay}ms` }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}

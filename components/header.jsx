@@ -39,19 +39,19 @@ export default function Header() {
           <div className="hidden md:flex space-x-6">
             <Link
               href="#features"
-              className="text-white font-medium transition-all duration-300 hover:text-cyan-400 cursor-pointer"
+              className="text-white font-medium transition-all duration-300 hover:text-orange-400 cursor-pointer"
             >
               Features
             </Link>
             <Link
               href="#pricing"
-              className="text-white font-medium transition-all duration-300 hover:text-cyan-400 cursor-pointer"
+              className="text-white font-medium transition-all duration-300 hover:text-orange-400 cursor-pointer"
             >
               Pricing
             </Link>
             <Link
               href="#contact"
-              className="text-white font-medium transition-all duration-300 hover:text-cyan-400 cursor-pointer"
+              className="text-white font-medium transition-all duration-300 hover:text-orange-400 cursor-pointer"
             >
               Contact
             </Link>
@@ -95,7 +95,7 @@ export default function Header() {
         </div>
         {isLoading && (
           <div className="fixed bottom-0 left-0 w-full z-40 flex justify-center">
-            <BarLoader width={"95%"} color="#06b6d4" />
+            <BarLoader width={"95%"} color="#f97316" />
           </div>
         )}
       </div>

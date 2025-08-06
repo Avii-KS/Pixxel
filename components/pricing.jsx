@@ -40,10 +40,10 @@ const PricingCard = ({
       ref={ref}
       className={`relative backdrop-blur-lg border rounded-3xl p-8 transition-all duration-700 cursor-pointer ${
         featured
-          ? "bg-gradient-to-b from-orange-500/20 to-yellow-600/20 border-orange-400/50 scale-105"
-          : "bg-white/5 border-white/10"
+          ? "bg-gradient-to-b from-orange-500/20 to-yellow-600/20 border-orange-400/50 scale-105 shadow-2xl shadow-orange-500/20"
+          : "bg-white/5 border-white/10 hover:border-orange-500/30"
       } ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"} ${
-        isHovered ? "transform scale-115 rotate-1 z-10" : ""
+        isHovered ? "transform scale-115 rotate-1 z-10 shadow-2xl" : ""
       }`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}

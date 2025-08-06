@@ -19,7 +19,7 @@ const HeroSection = () => {
 
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      <div className="text-center z-10 px-6">
+      <div className="text-center z-10 px-6 max-w-7xl mx-auto">
         <div
           className={`transition-all duration-1000 ${textVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
         >
@@ -31,16 +31,16 @@ const HeroSection = () => {
             <span className="text-white">Without Limits</span>
           </h1>
 
-          <p className="text-xl text-gray-400 mb-8 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
             Professional image editing powered by AI. Crop, resize, adjust
             colors, remove backgrounds, and enhance your images with
             cutting-edge technology.
           </p>
 
           <div className="text-center mb-8">
-            <p className="text-sm text-gray-500 font-medium">
+            <p className="text-sm text-gray-400 font-medium">
               Crafted with ❤️ by{" "}
-              <span className="bg-gradient-to-r from-orange-400 to-yellow-400 bg-clip-text text-transparent font-bold">
+              <span className="bg-gradient-to-r from-orange-400 to-yellow-400 bg-clip-text text-transparent font-bold animate-pulse">
                 Avinash
               </span>
             </p>
@@ -66,8 +66,8 @@ const HeroSection = () => {
           onMouseLeave={() => setDemoHovered(false)}
           style={{ perspective: "1000px" }}
         >
-          <div className="backdrop-blur-lg bg-white/10 border border-white/20 rounded-3xl p-6 transform-gpu">
-            <div className="bg-gradient-to-r from-slate-900 to-slate-800 rounded-2xl p-8 min-h-96">
+          <div className="backdrop-blur-lg bg-white/10 border border-white/20 rounded-3xl p-6 transform-gpu shadow-2xl shadow-orange-500/10">
+            <div className="bg-gradient-to-r from-slate-900 to-slate-800 rounded-2xl p-8 min-h-96 shadow-inner">
               <div className="flex items-center justify-between mb-6">
                 <div className="flex space-x-2">
                   <div className="w-3 h-3 bg-red-500 rounded-full"></div>
@@ -118,8 +118,9 @@ const App = () => {
       <PricingSection />
 
       {/* Final CTA Section */}
-      <section className="py-20 text-center">
-        <div className="max-w-4xl mx-auto px-6">
+      <section className="py-20 text-center relative">
+        <div className="absolute inset-0 bg-gradient-to-r from-orange-500/5 via-transparent to-yellow-500/5 rounded-3xl"></div>
+        <div className="max-w-4xl mx-auto px-6 relative z-10">
           <h2 className="text-5xl font-bold mb-6">
             Ready to{" "}
             <span className="bg-gradient-to-r from-orange-400 to-yellow-400 bg-clip-text text-transparent">
@@ -131,7 +132,7 @@ const App = () => {
             their images and bring their vision to life.
           </p>
           <Link href="/dashboard">
-            <Button variant="primary" size="xl">
+            <Button variant="primary" size="xl" className="animate-pulse">
               🌟 Start Creating Now
             </Button>
           </Link>

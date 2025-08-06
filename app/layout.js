@@ -36,7 +36,8 @@ export default function RootLayout({ children }) {
           >
             <ConvexClientProvider>
               <Header />
-              <main className="bg-gradient-to-br from-slate-900 via-orange-950/20 to-amber-950/30 min-h-screen text-white overflow-x-hidden">
+              <main className="bg-gradient-to-br from-slate-900 via-orange-950/20 to-amber-950/30 min-h-screen text-white overflow-x-hidden relative">
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/50 via-transparent to-transparent pointer-events-none"></div>
                 <FloatingShapes />
                 <Toaster richColors />
 
