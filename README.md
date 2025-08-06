@@ -4,7 +4,7 @@ A modern, AI-powered image editing platform built with Next.js 15, featuring rea
 
 ## 🚀 Live Demo
 
-[View Live Demo]([https://your-demo-link.com](https://pixxel-rust.vercel.app/))
+[View Live Demo]([https://pixxel-rust.vercel.app/])
 
 ## ✨ Key Features
 
