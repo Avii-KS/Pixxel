@@ -359,12 +359,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Convex** - Real-time database and backend
 - **Radix UI** - Accessible component primitives
 
-## 📞 Contact
-
-- **Portfolio**: [Your Portfolio](https://your-portfolio.com)
-- **LinkedIn**: [Your LinkedIn](https://linkedin.com/in/yourprofile)
-- **Email**: your.email@example.com
-
 ---
 
 **Built with ❤️ using Next.js, React, and modern web technologies**
